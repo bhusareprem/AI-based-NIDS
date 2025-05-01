@@ -1,0 +1,60 @@
+const axios = require('axios');
+
+// Sample network data (based on UNSW-NB15, with encoded categorical features)
+const networkData = {
+    dur: 0.121478,
+    proto: 0,  // e.g., tcp = 0
+    service: 0,  // e.g., - = 0
+    state: 0,  // e.g., FIN = 0
+    spkts: 10,
+    dpkts: 6,
+    sbytes: 560,
+    dbytes: 320,
+    rate: 74.08749,
+    sttl: 252,
+    dttl: 254,
+    sload: 36800.0,
+    dload: 21000.0,
+    sloss: 0,
+    dloss: 0,
+    sinpkt: 13.0,
+    dinpkt: 14.0,
+    sjit: 0.0,
+    djit: 0.0,
+    swin: 255,
+    stcpb: 123456,
+    dtcpb: 654321,
+    dwin: 255,
+    tcprtt: 0.000001,
+    synack: 0.000001,
+    ackdat: 0.000001,
+    smean: 56,
+    dmean: 53,
+    trans_depth: 0,
+    response_body_len: 0,
+    ct_srv_src: 2,
+    ct_state_ttl: 0,
+    ct_dst_ltm: 1,
+    ct_src_dport_ltm: 1,
+    ct_dst_sport_ltm: 1,
+    ct_dst_src_ltm: 2,
+    is_ftp_login: 0,
+    ct_ftp_cmd: 0,
+    ct_flw_http_mthd: 0,
+    ct_src_ltm: 1,
+    ct_srv_dst: 2,
+    is_sm_ips_ports: 0
+};
+
+async function predictIntrusion() {
+    try {
+        const response = await axios.post('http://127.0.0.1:8000/predict', networkData);
+        const prediction = response.data.prediction;
+        console.log(`Prediction: ${prediction === 0 ? 'Normal' : 'Intrusion'}`);
+    } catch (error) {
+        console.error('Error:', error.message);
+    }
+}
+
+// Run the prediction
+predictIntrusion();

@@ -1,0 +1,26 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.env
+
+# Node.js
+node_modules/
+nids-dashboard/node_modules/
+nids-dashboard/build/
+
+# macOS
+.DS_Store
+
+# Large files
+nids_model.pkl
+encoders.pkl
+UNSW_NB15_testing-set.csv
+UNSW_NB15_training-set.csv
+
+# Miscellaneous
+*.mov
