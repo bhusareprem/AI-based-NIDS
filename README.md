@@ -11,10 +11,10 @@ This project implements an AI-based NIDS using a Random Forest classifier traine
 
 
 ## Download Large Files
-- `nids_model.pkl`: [Google Drive Link]
-- `encoders.pkl`: [Google Drive Link]
-- `UNSW_NB15_testing-set.csv`: [Google Drive Link]
-- `UNSW_NB15_training-set.csv`: [Google Drive Link]
+- `nids_model.pkl`: [[Google Drive Link](https://drive.google.com/file/d/1SnzYirjq5GlmMPuPKjyz9uQ_OQfTk-Aj/view?usp=drive_link)ß]
+- `encoders.pkl`: [[Google Drive Link](https://drive.google.com/file/d/1dM3_SNpT5-tIs7nW3i1edJSXmPafEF9z/view?usp=drive_link)]
+- `UNSW_NB15_testing-set.csv`: [[Google Drive Link](https://drive.google.com/file/d/1qEaEAM-0C_sPv97zCtSE6ZpQJJZjQj0R/view?usp=drive_link)]
+- `UNSW_NB15_training-set.csv`: [[Google Drive Link](https://drive.google.com/file/d/1s5a_cpX06Y_AKWwoIhW5jkkumNqJTyvs/view?usp=drive_link)]
 - Place `nids_model.pkl`, `encoders.pkl`, and `UNSW_NB15_*` in `NIDS/`.
 - Place `UNSW_NB15_testing-set.csv` in `nids-dashboard/public/`.
 
@@ -37,5 +37,8 @@ Running
 Backend: http://127.0.0.1:8000
 Frontend: http://localhost:3000
 Use the dashboard to predict samples.
+
+
+
 License
 MIT License.
