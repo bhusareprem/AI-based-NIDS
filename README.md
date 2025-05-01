@@ -25,17 +25,17 @@ This project implements an AI-based NIDS using a Random Forest classifier traine
    cd AI-based-NIDS
 
    python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --reload
+   source venv/bin/activate
+   pip install -r requirements.txt
+   uvicorn main:app --reload
 
-cd nids-dashboard
-npm install
-npm start
+   cd nids-dashboard
+   npm install
+   npm start
 
 Running
-Backend: http://127.0.0.1:8000
-Frontend: http://localhost:3000
+   Backend: http://127.0.0.1:8000
+   Frontend: http://localhost:3000
 Use the dashboard to predict samples.
 
 
