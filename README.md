@@ -34,16 +34,16 @@ This project implements an AI-based NIDS using a Random Forest classifier traine
    npm start
 
 ## Running
-   Backend: http://127.0.0.1:8000 .
-   Frontend: http://localhost:3000 .
-   Use the dashboard to predict samples.
+      Backend: http://127.0.0.1:8000 .
+      Frontend: http://localhost:3000 .
+      Use the dashboard to predict samples.
 
 
 
 ## License
-   MIT License.
+      MIT License.
 
 ## Author 
-   Premkumar babu rao Bhusare,
-   Dept of IST,
-   Pennsylvania State University.
+      Premkumar babu rao Bhusare,
+      Dept of IST,
+      Pennsylvania State University.
